@@ -1,7 +1,7 @@
 import Inicio from './Inicio.svelte'
-import Inscripcion from './Inscripcion.svelte'
-import Reinscripcion from './Reinscripcion.svelte'
-import Tramites from './Tramites.svelte'
+import Inscripcion from './AE/Inscripcion.svelte'
+import Reinscripcion from './AE/Reinscripcion.svelte'
+import Tramites from './AE/Tramites.svelte'
 
 
 const routes = {

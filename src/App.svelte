@@ -4,7 +4,6 @@
 	import routes from './routes'
 	import Footer from './Componentes/Footer.svelte';
 	import Header from './Componentes/Header.svelte';
-	import { link } from 'svelte-spa-router'
  
 </script>
 
