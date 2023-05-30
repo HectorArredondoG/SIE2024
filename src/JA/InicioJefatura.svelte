@@ -33,6 +33,12 @@
 
                 </div>
             </div>
+            <div class="col consultas">
+                <div class="card" style="width: 10rem;">
+                    <a href="/RegistroPersonal" use:link><img src="../img/Diseño/adac.png" class="card-img-top" alt="..."></a>
+
+                </div>
+            </div>
             
 
         </div>
