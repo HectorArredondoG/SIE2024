@@ -7,6 +7,7 @@ import Tramites from './AE/Tramites.svelte'
 // Profesores
 import ProfTitular from './Prof/ProfTitular.svelte'
 import Jefatura from './JA/InicioJefatura.svelte'
+import Materias from './JA/Materias.svelte'
 
 
 const routes = {
@@ -19,6 +20,7 @@ const routes = {
     //Profesores
     '/ProfTitular': ProfTitular,
     '/Jefatura': Jefatura,
+    '/Materias': Materias,
 }
 
 

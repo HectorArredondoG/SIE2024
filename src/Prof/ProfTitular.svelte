@@ -35,7 +35,7 @@
   
   <main>
     <div class="titulo">
-      <h1>PROFESOR ASDSADASD</h1>
+      <h1>PROFESOR TITULAR</h1>
     </div>
     <br>
     <!-- tabla para filltrar -->
