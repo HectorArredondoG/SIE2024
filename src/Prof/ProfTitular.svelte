@@ -34,9 +34,7 @@
   </script>
   
   <main>
-    <div class="titulo">
       <h1>PROFESOR TITULAR</h1>
-    </div>
     <br>
     <!-- tabla para filltrar -->
     <table class="table table-hover table-bordered border-light">
@@ -436,12 +434,6 @@
   }
   table{
     margin: bottom 20px;;
-  }
-  .titulo{
-    text-align: center;
-  /* text-decoration: underline;
-  text-decoration-color: #E54D1E;
-  text-decoration-style: double; */
   }
   .GR{
     color: white;
