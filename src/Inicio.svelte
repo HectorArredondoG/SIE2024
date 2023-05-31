@@ -1,9 +1,50 @@
 <script>
     
+	import { link } from "svelte-spa-router"
 
 </script>
 
 <main>
+
+    <div class="d-flex justify-content-end inicio">
+		<!-- Button trigger modal -->
+			<button type="button" class="btn btn  iniciob" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+				Iniciar Sesión
+  			</button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+	<div class="modal-dialog">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h1 class="modal-title fs-5" id="staticBackdropLabel"> Inicio de sesión </h1>
+		  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		</div>
+		<div class="modal-body">
+			<div class="input-group mb-3">
+				<span class="input-group-text"> <i class="bi bi-envelope-at-fill"></i> </span>
+				<div class="form-floating">
+				  <input type="text" class="form-control" id="floatingInputGroup1" placeholder="Username">
+				  <label for="floatingInputGroup1"> Correo ENCRyM - INAH </label>
+				</div>
+			  </div>	
+			<div class="input-group mb-3">
+				<span class="input-group-text"> <i class="bi bi-eye-slash-fill"></i> </span>
+				<div class="form-floating">
+				  <input type="password" class="form-control" id="floatingInputGroup1" placeholder="Username">
+				  <label for="floatingInputGroup1"> Contraseña </label>
+				</div>
+			  </div>
+			  <a href="/Cambiar" use:link> <span class = "d-flex justify-content-center cambio"> <u> Cambiar contraseña </u> </span> </a>	
+		</div>
+		<div class="modal-footer">
+		  <button type="button" class="btn btn sesion" data-bs-dismiss="modal"> Iniciar Sesión </button>
+		  <button type="button" class="btn btn-secondary"> Cerrar </button>
+		</div>
+	  </div>
+	</div>
+  </div>	
+    </div>
 
     <div class="container banners">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -56,5 +97,29 @@
 	.banners {
         margin-top: 20px;
     }
+
+	.iniciob {
+		background-color: #E54d1e;
+		color: white;
+		border: none;
+		border-radius: 0%;
+		margin-top: 10px;
+	}
+
+	.modal-header, .modal-footer {
+		background-color: red;
+		color:white;
+	}
+
+	.sesion {
+		background-color: #Fccf00;
+		color:black
+	}
+
+	.cambio {
+		color:blue
+	}
+
+	
 
 </style>
