@@ -8,6 +8,12 @@ import Tramites from './AE/Tramites.svelte'
 import ProfTitular from './Prof/ProfTitular.svelte'
 import Jefatura from './JA/InicioJefatura.svelte'
 import Materias from './JA/Materias.svelte'
+//Alumnos
+import Alumnos from './AL/ALInicio.svelte'
+import AlAdeudos from './AL/ALAdeudos.svelte'
+import ALNoticias from './AL/ALNoticias.svelte'
+import ALEscolares from './AL/ALEscolares.svelte'
+import ALTramites from './AL/ALTramites.svelte'
 
 
 const routes = {
@@ -21,6 +27,13 @@ const routes = {
     '/ProfTitular': ProfTitular,
     '/Jefatura': Jefatura,
     '/Materias': Materias,
+    //Alumnos
+    '/Alumnos':Alumnos,
+    '/ALAdeudos': AlAdeudos,
+    '/ALNoticias': ALNoticias,
+    '/ALEscolares': ALEscolares,
+    '/ALTramites': ALTramites
+
 }
 
 
