@@ -31,68 +31,74 @@
         </div>
 
         <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
 
-                {#if posA==1}
+            {#if posA==1}
                 {#each Tramites as tramites}
                 <ul class="list-group list-group-item-warning">
                     <button class="list-group-item list-group-item-action list-group-item-info">
                         <div class="d-flex w-100 justify-content-between">
     
-                            <small>{tramites.Costo}</small>
+                            <small></small>
                         </div>
+                        <h5 class="card-title">{tramites.Titulo}</h5>
                         <p class="mb-1">{tramites.Fecha}</p>
                         <small>{tramites.Estado}
                             <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">Pasar a recojer a cajas</div>
+                            <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Pasar a recojer a cajas</div>
                         </div></small>
                     </button>
                 </ul>
+                <br>
             {/each}
                 {:else}
-                    <div class="row row-cols-1 row-cols-md-3 g-4" style="margin-bottom: 2.5rem;">
 
+                <!-- Cartas -->
+                    <div class="row row-cols-1 row-cols-md-3 g-4" style="margin-bottom: 2.5rem;">
+                        <!-- Extraordinario -->
                         <div class="col">
-                            <div class="card h-100">
-                                <img src="..." class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Extraordinarios</h5>
-                                    <p class="card-text">Consulta la informacion necesaria para poder registrarte a un Examen Extraordinario</p>
-                                </div>
-                                <div class="card-footer">
-                                    <small class="text-muted">Last updated 3 mins ago</small>
-                                </div>
+                            <div class="card">
+                                <img data-bs-toggle="modal" data-bs-target="#Mod_Extra" src="/img/Alumnos/ext.png" class="card-img-top" alt="...">
                             </div>
                         </div>
+
+                        <!-- Constancia e Historial -->
                         <div class="col">
-                            <div class="card h-100">
-                                <img src="..." class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Constancia de estudios e Historial Academico</h5>
-                                    <p class="card-text">Consulta como puedes tramitar tu Constancia de estudios y tu historial academico</p>
-                                </div>
-                                <div class="card-footer">
-                                    <small class="text-muted">Last updated 3 mins ago</small>
-                                </div>
+                            <div class="card">
+                                <img src="/img/Alumnos/ceh.png" class="card-img-top" alt="...">
                             </div>
                         </div>
+
+                        <!-- Baja Temporal -->
                         <div class="col">
-                            <div class="card h-100">
-                                <img src="..." class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Baja Temporal</h5>
-                                    <p class="card-text">Consulta como puedes tramites una baja temporal.</p>
-                                </div>
-                                <div class="card-footer">
-                                    <small class="text-muted">Last updated 3 mins ago</small>
-                                </div>
+                            <div class="card">
+                                <img src="/img/Alumnos/bjt.png" class="card-img-top" alt="...">
                             </div>
                         </div>
                     </div>
                 {/if}
             
-
+                                            <!-- Modales -->
+                <!-- Modal Extraordinarios-->
+                <div class="modal fade" id="Mod_Extra" tabindex="-1" aria-labelledby="Mod_ExtraLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="Mod_ExtraLabel">Informacion para el Extraordinario</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h4>Información general</h4>
+                                <p>Aqui estara toda la informacion que necesita el alumno para poder presentar un examen extraordinario</p>
+                                <h5>Requisitos</h5>
+                                <p>Pago de derecho de extraordinario</p>
+                                <p>haber cursado la materia</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
         </div>
     </div>
 

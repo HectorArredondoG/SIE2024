@@ -224,11 +224,24 @@
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                ...
+                                    <div class="row">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="1">
+                                            <label class="form-check-label" for="inlineCheckbox1">Correccion de calificaciones</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="2">
+                                            <label class="form-check-label" for="inlineCheckbox1">Aclaración de calificación</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <textarea class="form-control" placeholder="Motivo del Reporte" id="Reporte"></textarea>
+                                            <label for="Reporte"></label>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Understood</button>
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                                    <button type="button" class="btn btn-success">Mandar</button>
                                 </div>
                             </div>
                         </div>
@@ -347,7 +360,7 @@
                                 </tbody>
                             </table>
                         {:else }
-                            <h1 class="Avance-Titulo">Todavia no se ha cursado dicho ciclo</h1>
+                            <h1 class="Avance-Titulo">Todavia no se ha cursado el ciclo</h1>
                         {/if}
                     </div>
                 </div>

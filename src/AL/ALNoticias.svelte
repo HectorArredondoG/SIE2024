@@ -4,11 +4,11 @@
     let posB = 1;
     let Titulos = ['','Eventos','Noticias','Calendario Escolar'];
     let Descripcion = ['Aqui abajo podras ver todo el contenido de: ']
-    let Semanas = [{Dias:'Lunes',Anuncio:'No voy a trabajar'},
-                    {Dias:'Martes',Anuncio:'Ni te cases ni te enbarques'},
-                    {Dias:'Miercoles',Anuncio:'Se casa la patrona'},
-                    {Dias:'Jueves', Anuncio:'Estoy muy desvelado'},
-                    {Dias:'Viernes', Anuncio:'Que se muere jesucristo'}
+    let Semanas = [{Dias:'Lunes',Anuncio:'Actividades Administrativas y Estudiantiles se suspenderan por puente de semana santa'},
+                    {Dias:'Martes',Anuncio:'Actividades Administrativas y Estudiantiles se suspenderan por puente de semana santa'},
+                    {Dias:'Miercoles',Anuncio:'Sin Comunicado'},
+                    {Dias:'Jueves', Anuncio:'Sin Comunicado'},
+                    {Dias:'Viernes', Anuncio:'Sin Comunicado'}
                     ]
 </script>
 <body>

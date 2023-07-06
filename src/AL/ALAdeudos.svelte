@@ -14,9 +14,9 @@
                     {Adeudo:' Cable de Red', Motivo:'Se presto cable de red',Fecha:'Se prestó el dia 5/5/23',FechaLim:'Favor de entregarlo antes del 5/5/23'},
                     ]
     let Biblioteca = [
-                    {Adeudo:' Restauracion Inmobiliaria', Motivo:'Se presto cable VGA',Fecha:'Se prestó el dia 28/4/23',FechaLim:'Favor de entregarlo antes del 28/5/23'},
-                    {Adeudo:' Restauracion Arqueologica', Motivo:'Se presto Laptop',Fecha:'Se prestó el dia 7/5/23',FechaLim:'Favor de entregarlo antes del 7/6/23'},
-                    {Adeudo:' Historia de la conservacion', Motivo:'Se presto cable de red',Fecha:'Se prestó el dia 10/5/23',FechaLim:'Favor de entregarlo antes del 10/6/23'},
+                    {Adeudo:' Restauracion Inmobiliaria', Motivo:'Se prestó Libro',Fecha:'Se prestó el dia 28/4/23',FechaLim:'Favor de entregarlo antes del 28/5/23'},
+                    {Adeudo:' Restauracion Arqueologica', Motivo:'Se prestó Libro',Fecha:'Se prestó el dia 7/5/23',FechaLim:'Favor de entregarlo antes del 7/6/23'},
+                    {Adeudo:' Historia de la conservacion', Motivo:'Se prestó Libro',Fecha:'Se prestó el dia 10/5/23',FechaLim:'Favor de entregarlo antes del 10/6/23'},
                     ]
     let Talleres = [
                     {Adeudo:'Hiplocorito de sodio',Motivo:'Se presto la sustancia al Alumno',Fecha:'Se presto el dia 13/06/23', FechaLim:'Favor de entregarlo antes del 13/06/23'}
@@ -90,7 +90,7 @@
                                             <path d="M6.457 1.047c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0 1 14.082 15H1.918a1.75 1.75 0 0 1-1.543-2.575ZM8 5a.75.75 0 0 0-.75.75v2.5a.75.75 0 0 0 1.5 0v-2.5A.75.75 0 0 0 8 5Zm1 6a1 1 0 1 0-2 0 1 1 0 0 0 2 0Z">
                                             </path>
                                         </svg>{finanzas.Adeudo}</h5>
-                                    <small>{finanzas.Costo}</small>
+                                    <small></small>
                                 </div>
                                 <p class="mb-1">{finanzas.Motivo}</p>
                                 <small>{finanzas.Fecha}</small>

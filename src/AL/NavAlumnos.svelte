@@ -19,39 +19,33 @@
 
 
                             <!-- Adeudos -->
-                <!-- <li class="nav-item">
+                <li class="nav-item">
                     <button class="nav-link {PrendidoA==true? 'activado ':''}"
                             on:click={()=>{PrendidoA=true}}
                             on:click={()=>push('/ALAdeudos')}>Adeudos
-                    </button> -->
-
-
+                    </button>
+                </li>
 
                             <!-- Noticias -->
-                <!-- </li>
                 <li class="nav-item">
                     <button class="nav-link {PrendidoN==true? 'activado ':''}" 
                             on:click={()=>push('/ALNoticias')}
                             on:click={()=>{PrendidoN=true}}>Noticias</button>
- -->
 
-
+                </li>
                             <!-- Escolares -->
-                <!-- </li>
                 <li class="nav-item">
                     <button class="nav-link {PrendidoE==true? 'activado ':''}" 
                             on:click={()=>push('/ALEscolares')} 
                             on:click={()=>{PrendidoE=true}}>Escolares</button>
-                </li> -->
-
-
+                </li>
 
                             <!-- Tramites -->
-                <!-- <li class="nav-item">
+                <li class="nav-item">
                     <button class="nav-link {PrendidoT==true? 'activado ':''}" 
                             on:click={()=>push('/ALTramites')} 
                             on:click={()=>{PrendidoT=true}}>Tramites</button>
-                </li> -->
+                </li>
 
             </ul>
         </div>

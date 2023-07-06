@@ -1,86 +1,86 @@
 <script>
+	import Tramites from './../AE/Tramites.svelte';
     import NavAlumnos from "./NavAlumnos.svelte";
     import { push } from "svelte-spa-router";
+    import { link } from "svelte-spa-router"
 
 </script>
 
 
 <body>
     <NavAlumnos></NavAlumnos>
-    <div class="container">
-        
-        <div class="row row-cols-1 row-cols-md-4 g-4" style="margin-top: 1.5rem;">
-
-            <!-- Adeudos -->
-            <div class="col">
-                <div class="card h-100">
-                    <img src="./img/Diseño/fns.png" class="card-img-top" alt="">
-                    <div class="card-body">
-                        <h5 class="card-title"> </h5>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted" style="justify-content: center;">
-                            <button type="button" class="btn btn-success"
-                                    on:click={()=>push('/ALAdeudos')}>Ir a</button>
-                        </small>
-                    </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col Adeudos">
+                <div class="card" style="width: 2.5rem;">
+                    <a href="/ALAdeudos" use:link><img src="../img/Alumnos/ads.png" class="card-img-top" alt="Adeudos"></a>
                 </div>
             </div>
-
             <!-- Noticias -->
-            <div class="col">
-                <div class="card h-100">
-                    <img src="..." class="card-img-top" alt="">
-                        <div class="card-body">
-                        <h5 class="card-title">Noticias</h5>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted">
-                            <button type="button" class="btn btn-success"
-                                    on:click={()=>push('/ALNoticias')}>Ir a</button>
-                        </small>
-                    </div>
+            <div class="col Noticias">
+                <div class="card" style="width: 2.5rem;">
+                    <a href="/ALNoticias" use:link><img src="../img/Alumnos/ntc.png" class="card-img-top " alt="Noticiass"></a>
                 </div>
             </div>
-
             <!-- Escolares -->
-            <div class="col">
-                <div class="card h-100">
-                    <img src="./img/Diseño/mat.png" class="card-img-top" alt="">
-                        <div class="card-body">
-                        <h5 class="card-title"></h5>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted">
-                            <button type="button" class="btn btn-success"
-                                    on:click={()=>push('/ALEscolares')}>Ir a</button>
-                        </small>
-                    </div>
+            <div class="col Escolares">
+                <div class="card" style="width: 2.5rem;">
+                    <a href="/ALEscolares" use:link><img src="../img/Alumnos/esc.png" class="card-img-top" alt="Escolares"></a>
                 </div>
             </div>
-
             <!-- Tramites -->
-            <div class="col">
-                <div class="card h-100">
-                    <img src="./img/Diseño/tram.png" class="card-img-top" alt="">
-                        <div class="card-body">
-                        <h5 class="card-title"> </h5>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted">
-                            <button type="button" class="btn btn-success"
-                                    on:click={()=>push('/ALTramites')} >Ir a</button>
-                        </small>
-                    </div>
+            <div class="col Tramites">
+                <div class="card" style="width: 2.5rem;">
+                    <a href="/ALTramites" use:link><img src="../img/Alumnos/trm.png" class="card-img-top" alt="Trámites"></a>
                 </div>
             </div>
-
-        </div>
+            <!-- Practicas Semestrales -->
+            <div class="col Tutorias">
+                <div class="card" style="width: 2.5rem;">
+                    <a href="/ALTutorias" use:link><img src="../img/Alumnos/tut.png" class="card-img-top" alt="Tutorias"></a>
+                </div>
+            </div>
+            <!-- TTutorias -->
+            <div class="col Practicas">
+                <div class="card" style="width: 2.5rem;">
+                    <a href="/ALPracticasS" use:link><img src="../img/Alumnos/pcsm.png" class="card-img-top" alt="Practicas Semestrales"></a>
+                </div>
+            </div>
+            
     </div>
 
 
 
 </body>
 
-<style>
+<style> 
+    .row{
+        margin-left: 4.5rem;
+    }
+    img {
+        width: 320px;
+        height: 250px;
+    }
+    .card{
+        margin-right: 2rem;
+    }
+
+    .Adeudos, 
+    .Noticias, 
+    .Tramites, 
+    .Escolares,
+    .Tutorias,
+    .Practicas 
+        {
+            margin-top: 5rem;
+        }
+    .Adeudos :hover,
+    .Noticias :hover,
+    .Tramites :hover,
+    .Escolares :hover,
+    .Tutorias :hover,
+    .Practicas :hover
+        {
+            box-shadow: .25rem .25rem 1rem orange ;
+        }
+
 </style>
