@@ -8,7 +8,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #FFDC40;" >
     <div class="container-fluid">
 
-        <a class="navbar-brand" href="#/Alumnos">Inicio Alumnos</a>
+        <a class="navbar-brand" href="#/Alumnos">Ir al inicio: Alumnos</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -24,27 +24,21 @@
                             on:click={()=>{PrendidoA=true}}
                             on:click={()=>push('/ALAdeudos')}>Adeudos
                     </button>
-
-
+                </li>
 
                             <!-- Noticias -->
-                </li>
                 <li class="nav-item">
                     <button class="nav-link {PrendidoN==true? 'activado ':''}" 
                             on:click={()=>push('/ALNoticias')}
                             on:click={()=>{PrendidoN=true}}>Noticias</button>
 
-
-
-                            <!-- Escolares -->
                 </li>
+                            <!-- Escolares -->
                 <li class="nav-item">
                     <button class="nav-link {PrendidoE==true? 'activado ':''}" 
                             on:click={()=>push('/ALEscolares')} 
                             on:click={()=>{PrendidoE=true}}>Escolares</button>
                 </li>
-
-
 
                             <!-- Tramites -->
                 <li class="nav-item">
@@ -77,11 +71,18 @@
     }
     .activado{
         background-color: #FB7D0C;
-		color: white
+		color: white;
+        border-style: double;
+        border-color: black;
     }
     button{
         background-color: transparent;
     }
-
+    .navbar{
+        margin-top: .5rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        border-style: groove;
+    }
 
 </style>
