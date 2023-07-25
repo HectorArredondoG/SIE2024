@@ -14,6 +14,7 @@ import AlAdeudos from './AL/ALAdeudos.svelte'
 import ALNoticias from './AL/ALNoticias.svelte'
 import ALEscolares from './AL/ALEscolares.svelte'
 import ALTramites from './AL/ALTramites.svelte'
+import ALTutorias from './AL/ALTutorias.svelte'
 
 
 const routes = {
@@ -32,7 +33,8 @@ const routes = {
     '/ALAdeudos': AlAdeudos,
     '/ALNoticias': ALNoticias,
     '/ALEscolares': ALEscolares,
-    '/ALTramites': ALTramites
+    '/ALTramites': ALTramites,
+    '/ALTutorias': ALTutorias
 
 }
 
