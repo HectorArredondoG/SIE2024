@@ -30,7 +30,7 @@
     
     <NavAlumnos></NavAlumnos>
 
-
+    <!-- Aqui se escoje cada opcion de la pagina de adeudos -->
 
     <div class="card text-center">
 
@@ -78,8 +78,10 @@
 					<!-- Titulo -->
             <h5 class="card-title">{Titulos[posA]}</h5>
 				<div class="list-group list-group-item-action">
-
+                    <!-- Con un IF cambia de posicion para cada situacion que se necesita -->
                     {#if posA==1}
+                    <!-- Uso un #S-each para usar una cadena de objetos -->
+                <!-- Finanzas -->
                         {#each Finanzas as finanzas}
                             <button 
                                 class="list-group-item list-group-item-action list-group-item-danger ">
@@ -96,6 +98,7 @@
                                 <small>{finanzas.Fecha}</small>
                             </button>
                         {/each}
+                        <!-- Informatica -->
                     {:else if posA==2}
                         {#each Informatica as Informatica}
                             <button 
@@ -112,6 +115,7 @@
                                 <small>{Informatica.Fecha}</small>
                             </button>
                         {/each}
+                        <!-- Biblioteca -->
                     {:else if posA==3}
                         {#each Biblioteca as biblioteca}
                             <button 
@@ -128,6 +132,7 @@
                                 <small>{biblioteca.Fecha}</small>
                             </button>
                         {/each}
+                        <!-- Talleres -->
                     {:else if posA==4}
                         {#each Talleres as talleres}
                         <button 

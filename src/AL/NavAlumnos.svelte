@@ -1,6 +1,6 @@
 <script>
 
-    let PrendidoA,PrendidoN,PrendidoT,PrendidoE
+    let PrendidoA,PrendidoN,PrendidoT,PrendidoE,PrendidoTt,PrendidoP
     import { push } from "svelte-spa-router";
 
 </script>
@@ -8,7 +8,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #FFDC40;" >
     <div class="container-fluid">
 
-        <a class="navbar-brand" href="#/Alumnos">Ir al inicio: Alumnos</a>
+        <a class="navbar-brand" href="#/Alumnos">Ir al inicio</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -19,33 +19,47 @@
 
 
                             <!-- Adeudos -->
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <button class="nav-link {PrendidoA==true? 'activado ':''}"
                             on:click={()=>{PrendidoA=true}}
                             on:click={()=>push('/ALAdeudos')}>Adeudos
                     </button>
-                </li>
+                </li> -->
 
                             <!-- Noticias -->
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <button class="nav-link {PrendidoN==true? 'activado ':''}" 
                             on:click={()=>push('/ALNoticias')}
                             on:click={()=>{PrendidoN=true}}>Noticias</button>
+                </li> -->
 
-                </li>
                             <!-- Escolares -->
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <button class="nav-link {PrendidoE==true? 'activado ':''}" 
                             on:click={()=>push('/ALEscolares')} 
                             on:click={()=>{PrendidoE=true}}>Escolares</button>
-                </li>
+                </li> -->
 
                             <!-- Tramites -->
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <button class="nav-link {PrendidoT==true? 'activado ':''}" 
                             on:click={()=>push('/ALTramites')} 
                             on:click={()=>{PrendidoT=true}}>Tramites</button>
-                </li>
+                </li> -->
+
+                            <!-- Tutorias -->
+                <!-- <li class="nav-item">
+                    <button class="nav-link {PrendidoTt==true? 'activado ':''}" 
+                            on:click={()=>push('/ALTutorias')} 
+                            on:click={()=>{PrendidoTt=true}}>Tutorias</button>
+                </li> -->
+
+                            <!-- Practicas Semestrales -->
+                <!-- <li class="nav-item">
+                    <button class="nav-link {PrendidoP==true? 'activado ':''}" 
+                            on:click={()=>push('/ALPracticasS')} 
+                            on:click={()=>{PrendidoP=true}}>Practicas Semestrales</button>
+                </li> -->
 
             </ul>
         </div>

@@ -52,10 +52,12 @@
                 </li>
             </ul>
         </div>
-
+        
         <div class="card-body">
             <h5 class="card-title">{Titulos[posA].titulo}</h5>
             <p class="card-text">{Titulos[posA].descripcion}</p>
+            <!-- Horario de codigo -->
+                <!-- Perdon por esto, fue lo mas facil para hacer un horario en codigo xD -->
             {#if posA == 1}
             <div class="container">
                 <table class="table table-bordered border-dark table-hover">
@@ -71,7 +73,7 @@
                     </thead>
         
                     <tbody>
-
+                        <!-- horas de 7am a 9am -->
                         <tr>
                             <th scope="row">7:00 - 9:00</th>
                             <th class="table-danger" colspan="1">Lab Introductorio Rest.
@@ -91,7 +93,7 @@
                                 </p>
                             </th>
                         </tr>
-
+                        <!-- Horas de 9am a 11am -->
                         <tr>
                             <th scope="row">9:00 - 11:00</th>
                             <th class="table-info" colspan="2">Int. teorías y métodos de las ciencias sociales. Restauracion
@@ -106,7 +108,7 @@
                                 </p>
                             </th>
                         </tr>
-
+                        <!-- Horas de 11am a 13am -->
                         <tr>
                             <th scope="row">11:00 - 13:00 </th>
                             <th class="table-vacia" colspan="1"></th>
@@ -122,7 +124,7 @@
                                 </p>
                             </th>
                         </tr>
-
+                        <!-- Horas de 13am a 15am -->
                         <tr>
                             <th scope="row">13:00 - 15:00 </th>
                             <th class="table-violeta"colspan="1">Ciencia Basica
@@ -143,37 +145,11 @@
                             <th class="table-vacia" colspan="1"></th>
                         </tr>
 
-                        <tr>
-                            <th scope="row">13:00 - 15:00 </th>
-                            <th colspan="1"></th>
-                            <th colspan="1"></th>
-                            <th colspan="1"></th>
-                            <th colspan="1"></th>
-                            <th colspan="1"></th>
-                        </tr>
-
-                        <tr>
-                            <th scope="row">15:00 - 17:00 </th>
-                            <th colspan="1"></th>
-                            <th colspan="1"></th>
-                            <th colspan="1"></th>
-                            <th colspan="1"></th>
-                            <th colspan="1"></th>
-                        </tr>
-
-                        <tr>
-                            <th scope="row">17:00 - 19:00 </th>
-                            <th colspan="1"></th>
-                            <th colspan="1"></th>
-                            <th colspan="1"></th>
-                            <th colspan="1"></th>
-                            <th colspan="1"></th>
-                        </tr>
-
                     </tbody>
         
                 </table>
-            </div>
+            </div>  
+            <!-- Calificaciones-->
             {:else if  posA == 2}
             <div class="row">
                 <div class="col-1"></div>
@@ -182,6 +158,7 @@
                         <button type="button" class="btn btn-secondary dropdown-toggle" style="background-color:#FBAB0C" data-bs-toggle="dropdown" aria-expanded="false">
                         Materia
                         </button>
+                        <!-- Uso un dropdown para escojer las materias y un on:click para hacer el cambio de opcion -->
                         <ul class="dropdown-menu dropdown-menu-end" style="background-color:#FBAB0C">
                             <li><button class="dropdown-item" on:click = { ()=> posB = 0 } >Laboratorio Introductorio a la Restauración</button></li>
                             <li><button class="dropdown-item" on:click = { ()=> posB = 1 } >Metodologías y documentación para la Conservación</button></li>
@@ -193,6 +170,7 @@
                 </div>
                 <div class="col-2"></div>
                 <div class="col-6">
+                    <!-- Si la calificaion en "Horarios.Calificacion" en el arreglo de arriba es menor a 5 la carta se pone en rojo si no se cambia a verde -->
                     <div class="card text-bg-{ Horario[posB].Calificacion <= 5 ? 'danger' : 'success' } mb-3" style="max-width: 18rem;">
                         <div class="card-header">{ Horario[posB].Materia }</div>
                             <div class="card-body">
@@ -204,7 +182,7 @@
                     
                 </div>
                 <div class="col-1">
-                    <!-- Button trigger modal -->
+                    <!-- Boton para generar el reporte -->
                     <button type="button" class="btn btn-reporte" style="background-color:#dc3545" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                         Reporte
                     </button>
@@ -251,11 +229,12 @@
                 <div class="col-1"></div>
             </div>
 
-
+            <!-- Avance Curricular -->
             {:else if posA == 3 }
                 <div class="row">
                     <div class="col-2 col2">
                         <div class="btn-group dropend">
+                            <!-- Con el boton se abren todos los ciclos de la carrera -->
                             <button type="button" class="btn btn-secondary dropdown-toggle" style="background-color:#FBAB0C" data-bs-toggle="dropdown" aria-expanded="false">
                             Ciclo
                             </button>
@@ -274,6 +253,9 @@
                         </div>
                     </div>
                     <div class="col-10">
+                        <!-- Un if dentro de otro if :v
+                        Solamente es una tabla del primer ciclo y segundo ciclo los demas ciclo entran en el else y solo manda un mensaje  -->
+                        <!-- Primer ciclo -->
                         {#if posB==0}
                             <table class="table table-bordered border-dark">
                                 <thead>
@@ -311,6 +293,7 @@
                                 </tr>
                                 </tbody>
                             </table>
+                            <!-- Segundo ciclo -->
                         {:else if posB==1}
                             <h1 class="Avance-Titulo">Se esta cursando el actual ciclo espere al fin de curso para poder consultar tus calificaciones</h1>
                             <table class="table table-bordered border-dark">
@@ -359,6 +342,7 @@
                                 </tr>
                                 </tbody>
                             </table>
+                            <!-- Aqui Todos los demas ciclos entran aqui -->
                         {:else }
                             <h1 class="Avance-Titulo">Todavia no se ha cursado el ciclo</h1>
                         {/if}

@@ -2,7 +2,7 @@
     import NavAlumnos from "./NavAlumnos.svelte";
     let posA = 1;
     let posB = 1;
-    let Titulos = ['','Eventos','Noticias','Calendario Escolar'];
+    let Titulos = ['','Eventos','Comunicados','Calendario Escolar'];
     let Descripcion = ['Aqui abajo podras ver todo el contenido de: ']
     let Semanas = [{Dias:'Lunes',Anuncio:'Actividades Administrativas y Estudiantiles se suspenderan por puente de semana santa'},
                     {Dias:'Martes',Anuncio:'Actividades Administrativas y Estudiantiles se suspenderan por puente de semana santa'},
@@ -47,6 +47,7 @@
     <div class="card-body">
         <h5 class="card-title">{Titulos[posA]}</h5>
         <p class="card-text">{Descripcion+Titulos[ posA]}</p>
+        
         {#if posA==1}
         <div class="container banners">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
